@@ -22,9 +22,12 @@ int main(int argc, char** argv) {
   
   PTK::Box<int> b3(b2);
   b3.use(show, std::string("b3: "));
-  
-
+ 
   PTK::TBox<int, std::unique_ptr> b4(new int(123));
   b4.use(show, std::string("b4: "));
+
+  PTK::Box<int> b5(std::shared_ptr<int>(new int(12345)));
+  b5.use(show, std::string("b5: "));
+
   return 0;
 }

@@ -35,6 +35,11 @@ namespace PTK {
     , ptr_(cptr)
     {}
 
+    Box(P ptr)
+    : mtx_(new Mutex())
+    , ptr_(ptr)
+    {}
+
     Box& operator=(const Box& other) = delete;
     Box& operator=(const Box&& other) = delete;
 

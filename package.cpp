@@ -4,7 +4,7 @@ using namespace PPM::Utils;
 
 PPM_PACKAGE(p) {
   p->name("box");
-  p->version(PPM::Version("v0.1.2"));
+  p->version(PPM::Version("v0.1.3"));
   p->description("A wrapper for a mutex and a smart pointer for thread-safe data manipulation. ");
   p->github(PPM::GitHub("particletk", "box"));
   p->license(PPM::License("MIT", "https://github.com/particletk/box/blob/master/LICENSE.txt"));
