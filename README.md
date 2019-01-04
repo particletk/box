@@ -2,30 +2,9 @@
 
 A wrapper for a mutex and a smart pointer for thread-safe data manipulation. 
 
-## Install
+## dumbcpm
 
-```cpp
-#include <particlepm.hpp>
-
-// ...
-
-PPM_PACKAGE(p) {
-  // ...
-
-  PPM::GitHubPtr ptk_box = p->github_repo("particletk", "box");
-
-  // ...
-
-  target->cpp_flags(flagcat({
-    // ...
-    ("-I" + ptk_box->dir()),
-    // ...
-  }));
-
-  // ...
-}
-
-```
+This package is available in dumbcpm as `particletk-box`
 
 ## Usage
 

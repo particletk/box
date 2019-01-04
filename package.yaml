@@ -1,0 +1,19 @@
+name: particletk-box
+version: 0.1.4
+description: "A wrapper for a mutex and a smart pointer for thread-safe data manipulation"
+
+git-repo: "https://github.com/particletk/box/"
+git-tag: "v0.1.4"
+
+targets:
+  particletk-box:
+    type: library
+    include-dirs:
+      - "."
+  particletk-box-demo:
+    type: executable
+    sources:
+      - demo.cpp
+    cpp: "c++11"
+    link:
+      - particletk-box/particletk-box
